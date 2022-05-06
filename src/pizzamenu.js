@@ -1,6 +1,7 @@
-export default function renderMenu() {
+export default function renderPizzaMenu() {
+  let menuContainer;
   for (let i = 0; i <= 6; i++) {
-    const contentContainer = document.querySelector("#content");
+    menuContainer = document.createElement("div");
     const menuItem = document.createElement("div");
     const menuItemTitle = document.createElement("h4");
     const menuItemPrice = document.createElement("h4");
@@ -11,7 +12,8 @@ export default function renderMenu() {
 
     menuItemTitle.innerText = "Pizza";
     menuItemPrice.innerText = "$9.99";
-    contentContainer.append(menuItem);
+    menuContainer.append(menuItem);
     menuItem.append(menuItemTitle, menuItemPrice);
   }
+  return menuContainer;
 }
