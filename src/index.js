@@ -2,10 +2,11 @@ import { renderHomePage, menuButtons } from "./homepage";
 import renderPizzaMenu from "./pizzamenu";
 import renderWineMenu from "./winemenu";
 import renderContactPage from "./contactpage";
+import "./style.css";
 
 // creating elements
 const contentDisplayed = document.querySelector("#content");
-let homePage = renderHomePage();
+let homePage = renderHomePage(); //need to be re-assigned later
 const pizzaMenu = renderPizzaMenu();
 const wineMenu = renderWineMenu();
 const contact = renderContactPage();

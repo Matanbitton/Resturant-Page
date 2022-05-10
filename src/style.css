@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,600&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto Flex", sans-serif;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+.header {
+  padding: 6px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  gap: 10px;
+  background-color: rgb(41, 41, 41);
+  border: solid 2px rgb(219, 219, 31);
+}
+.header > button {
+  background-color: rgb(219, 219, 31);
+  border-radius: 1em;
+  border: none;
+  padding: 5px;
+  font-size: large;
+  font-weight: bold;
+  width: 100px;
+}

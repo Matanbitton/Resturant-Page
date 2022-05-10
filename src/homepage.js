@@ -9,7 +9,7 @@ export function renderHomePage() {
   heroSection.className = "hero";
   heroText.className = "hero-text";
 
-  logo.innerText = "PizzaBar";
+  logo.innerText = "Basil's Pizza Parlor";
   heroText.innerText = "Pizza and fine wine!";
 
   homeContainer.append(heroSection);
@@ -24,6 +24,7 @@ export function menuButtons() {
   const wine = document.createElement("button");
   const contact = document.createElement("button");
 
+  buttonsContainer.classList.add("buttons");
   home.classList.add("home-btn");
   pizza.classList.add("pizza-btn");
   wine.classList.add("wine-btn");
