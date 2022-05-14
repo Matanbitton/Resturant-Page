@@ -1,19 +1,17 @@
 export function renderHomePage() {
   const homeContainer = document.createElement("div");
-  const logo = document.createElement("h4");
   const heroSection = document.createElement("div");
   const heroText = document.createElement("p");
 
   homeContainer.className = "home-container";
-  logo.className = "logo";
+
   heroSection.className = "hero";
   heroText.className = "hero-text";
 
-  logo.innerText = "Basil's Pizza Parlor";
-  heroText.innerText = "Pizza and fine wine!";
+  heroText.innerText = "Pizza and Fine Wine!";
 
   homeContainer.append(heroSection);
-  heroSection.append(logo, heroText);
+  heroSection.append(heroText);
   return homeContainer;
 }
 

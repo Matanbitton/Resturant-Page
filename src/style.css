@@ -12,18 +12,58 @@ body {
   padding: 6px;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr repeat(4, 0.5fr);
   justify-items: center;
   gap: 10px;
   background-color: rgb(41, 41, 41);
-  border: solid 2px rgb(219, 219, 31);
+  border: solid 2px rgb(241, 213, 56);
 }
 .header > button {
-  background-color: rgb(219, 219, 31);
+  background-color: rgb(241, 213, 56);
   border-radius: 1em;
   border: none;
   padding: 5px;
   font-size: large;
   font-weight: bold;
   width: 100px;
+}
+.logo {
+  justify-self: center;
+  align-self: center;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  color: rgb(241, 213, 56);
+}
+.icon {
+  width: 600px;
+  height: 600px;
+  border-radius: 60% 40% 60% 40%;
+}
+.hero {
+  z-index: 2;
+  border-radius: 2em;
+  background-color: rgb(241, 213, 56);
+  height: 60px;
+  width: 400px;
+  font-size: 36px;
+  font-weight: bold;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+}
+.home-container {
+  z-index: 1;
+  height: 100vh;
+  background: url("./icon.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: blur(8px);
+  display: flex;
+  justify-content: flex-end;
 }

@@ -3,6 +3,7 @@ import renderPizzaMenu from "./pizzamenu";
 import renderWineMenu from "./winemenu";
 import renderContactPage from "./contactpage";
 import "./style.css";
+import Icon from "./icon.jpeg";
 
 // creating elements
 const contentDisplayed = document.querySelector("#content");
@@ -16,14 +17,24 @@ const homeBtn = buttonsContainer.querySelector(".home-btn");
 const pizzaBtn = buttonsContainer.querySelector(".pizza-btn");
 const wineBtn = buttonsContainer.querySelector(".wine-btn");
 const contactBtn = buttonsContainer.querySelector(".contact-btn");
+const logo = document.createElement("h4");
 
-header.append(homeBtn, pizzaBtn, wineBtn, contactBtn);
+const myIcon = new Image();
+myIcon.src = Icon;
+myIcon.className = "icon";
+logo.innerText = "Basil's Pizza Parlor";
+
+logo.className = "logo";
+
+homePage.append(myIcon);
+
+header.append(logo, homeBtn, pizzaBtn, wineBtn, contactBtn);
 contentDisplayed.append(header, homePage);
 
 //event listeners
 homeBtn.addEventListener("click", () => {
   homePage.innerHTML = "";
-  homePage.append(renderHomePage());
+  homePage.append(renderHomePage(), myIcon);
 });
 pizzaBtn.addEventListener("click", () => {
   homePage.innerHTML = "";
