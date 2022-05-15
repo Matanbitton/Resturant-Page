@@ -8,6 +8,7 @@ import Icon from "./icon.jpeg";
 // creating elements
 const contentDisplayed = document.querySelector("#content");
 let homePage = renderHomePage(); //needs to be re-assigned later
+const hero = homePage.firstChild;
 const pizzaMenu = renderPizzaMenu();
 const wineMenu = renderWineMenu();
 const contact = renderContactPage();
@@ -32,7 +33,7 @@ contentDisplayed.append(header, homePage);
 //event listeners
 homeBtn.addEventListener("click", () => {
   homePage.innerHTML = "";
-  homePage.append(renderHomePage());
+  homePage.append(hero);
 });
 pizzaBtn.addEventListener("click", () => {
   homePage.innerHTML = "";
