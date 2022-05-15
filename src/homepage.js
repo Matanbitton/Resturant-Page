@@ -8,7 +8,7 @@ export function renderHomePage() {
   heroSection.className = "hero";
   heroText.className = "hero-text";
 
-  heroText.innerText = "Pizza and Fine Wine!";
+  heroText.innerText = "Enjoy our variety of Pizza's and Wines.";
 
   homeContainer.append(heroSection);
   heroSection.append(heroText);

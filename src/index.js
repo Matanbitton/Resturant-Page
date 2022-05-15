@@ -7,7 +7,7 @@ import Icon from "./icon.jpeg";
 
 // creating elements
 const contentDisplayed = document.querySelector("#content");
-let homePage = renderHomePage(); //need to be re-assigned later
+let homePage = renderHomePage(); //needs to be re-assigned later
 const pizzaMenu = renderPizzaMenu();
 const wineMenu = renderWineMenu();
 const contact = renderContactPage();
@@ -26,15 +26,13 @@ logo.innerText = "Basil's Pizza Parlor";
 
 logo.className = "logo";
 
-homePage.append(myIcon);
-
 header.append(logo, homeBtn, pizzaBtn, wineBtn, contactBtn);
 contentDisplayed.append(header, homePage);
 
 //event listeners
 homeBtn.addEventListener("click", () => {
   homePage.innerHTML = "";
-  homePage.append(renderHomePage(), myIcon);
+  homePage.append(renderHomePage());
 });
 pizzaBtn.addEventListener("click", () => {
   homePage.innerHTML = "";

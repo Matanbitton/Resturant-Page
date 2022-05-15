@@ -3,11 +3,18 @@
 * {
   box-sizing: border-box;
   font-family: "Roboto Flex", sans-serif;
+  --yellow: rgb(241, 213, 56);
+  --icon: .icon;
 }
 body {
+  background: url("./icon.jpeg");
+  height: 100vh;
+  background-size: cover;
+  backdrop-filter: blur(2px);
   padding: 0;
   margin: 0;
 }
+
 .header {
   padding: 6px;
   width: 100%;
@@ -15,55 +22,40 @@ body {
   grid-template-columns: 1fr repeat(4, 0.5fr);
   justify-items: center;
   gap: 10px;
-  background-color: rgb(41, 41, 41);
-  border: solid 2px rgb(241, 213, 56);
+  background-color: transparent;
 }
 .header > button {
-  background-color: rgb(241, 213, 56);
+  background-color: var(--yellow);
   border-radius: 1em;
-  border: none;
-  padding: 5px;
   font-size: large;
+  border-style: none;
   font-weight: bold;
-  width: 100px;
+  color: rgb(0, 0, 0);
+  height: 30px;
+  width: 120px;
 }
 .logo {
   justify-self: center;
   align-self: center;
   padding: 0;
   margin: 0;
-  font-size: 20px;
-  color: rgb(241, 213, 56);
+  font-size: 30px;
+  color: var(--yellow);
 }
-.icon {
-  width: 600px;
-  height: 600px;
-  border-radius: 60% 40% 60% 40%;
-}
+
 .hero {
-  z-index: 2;
-  border-radius: 2em;
-  background-color: rgb(241, 213, 56);
-  height: 60px;
-  width: 400px;
-  font-size: 36px;
+  font-size: 45px;
   font-weight: bold;
-  color: black;
+
+  color: white;
+}
+
+.home-container {
+  position: relative;
+  background: rgb(204, 204, 204);
+  background: rgba(0, 0, 0, 0.4);
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 50%;
-  right: 50%;
-}
-.home-container {
-  z-index: 1;
-  height: 100vh;
-  background: url("./icon.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-filter: blur(8px);
-  display: flex;
-  justify-content: flex-end;
 }
