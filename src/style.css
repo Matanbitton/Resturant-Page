@@ -59,3 +59,43 @@ body {
   justify-content: center;
   align-items: center;
 }
+.hero-text::before {
+  display: block;
+  content: "Top 10 Italian Resturants- 2022 Contest Winner";
+  color: var(--yellow);
+  font-size: 20px;
+}
+.pizza-menu-container {
+  border: 5px solid var(--yellow);
+  border-radius: 1em;
+
+  width: 600px;
+  height: 800px;
+  display: grid;
+  padding: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.pizza-menu-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+  border: 2px solid var(--yellow);
+  color: white;
+  font-size: 24px;
+}
+.pizza-menu-title {
+  grid-area: 1 / 1 / 1 / 3;
+  color: white;
+  font-size: 30px;
+}

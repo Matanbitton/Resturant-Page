@@ -1,19 +1,24 @@
 export default function renderPizzaMenu() {
-  let menuContainer;
-  for (let i = 0; i <= 6; i++) {
-    menuContainer = document.createElement("div");
-    const menuItem = document.createElement("div");
-    const menuItemTitle = document.createElement("h4");
-    const menuItemPrice = document.createElement("h4");
+  const menuTitle = document.createElement("h3");
+  menuTitle.className = "pizza-menu-title";
+  menuTitle.innerText = "Pizza Menu";
+  let menuContainer = document.createElement("div");
+  menuContainer.append(menuTitle);
+  for (let i = 0; i <= 5; i++) {
+    let menuItem = document.createElement("div");
+    let menuItemTitle = document.createElement("h4");
+    let menuItemPrice = document.createElement("h4");
 
-    menuItem.className = "pizza menu-item";
-    menuItemTitle.className = "pizza menu-item-title";
-    menuItemPrice.className = "pizza menu-item-price";
+    menuContainer.className = "pizza-menu-container";
+    menuItem.className = "pizza-menu-item";
+    menuItemTitle.className = "pizza-menu-item-title";
+    menuItemPrice.className = "pizza-menu-item-price";
 
-    menuItemTitle.innerText = "Pizza";
+    menuItemTitle.innerText = "Pizza Item";
     menuItemPrice.innerText = "$9.99";
-    menuContainer.append(menuItem);
     menuItem.append(menuItemTitle, menuItemPrice);
+    menuContainer.append(menuItem);
   }
+
   return menuContainer;
 }

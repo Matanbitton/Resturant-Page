@@ -10,6 +10,7 @@ const contentDisplayed = document.querySelector("#content");
 let homePage = renderHomePage(); //needs to be re-assigned later
 const hero = homePage.firstChild;
 const pizzaMenu = renderPizzaMenu();
+const pizzaItems = pizzaMenu.childNodes;
 const wineMenu = renderWineMenu();
 const contact = renderContactPage();
 const header = document.createElement("header");
