@@ -5,7 +5,7 @@ export default function renderWineMenu() {
   let menuContainer = document.createElement("div");
   menuContainer.className = "wine-menu-container";
   menuContainer.append(menuTitle);
-  for (let i = 0; i <= 5; i++) {
+  for (let i = 0; i < 3; i++) {
     let menuItem = document.createElement("div");
     let menuItemTitle = document.createElement("h4");
     let menuItemPrice = document.createElement("h4");

@@ -29,8 +29,8 @@ export function menuButtons() {
   contact.classList.add("contact-btn");
 
   home.innerText = "Home";
-  pizza.innerText = "Our Pizza's";
-  wine.innerText = "Our Wine";
+  pizza.innerText = "Our Pizzas";
+  wine.innerText = "Our Wines";
   contact.innerText = "Contanct";
   buttonsContainer.append(home, pizza, wine, contact);
 

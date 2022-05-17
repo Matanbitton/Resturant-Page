@@ -21,6 +21,8 @@ const wineBtn = buttonsContainer.querySelector(".wine-btn");
 const contactBtn = buttonsContainer.querySelector(".contact-btn");
 const logo = document.createElement("h4");
 
+console.log(pizzaItems);
+
 const myIcon = new Image();
 myIcon.src = Icon;
 myIcon.className = "icon";

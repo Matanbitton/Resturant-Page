@@ -5,7 +5,7 @@ export default function renderContactPage() {
 
   heroSection.className = "contact-hero-section";
   heroText.className = "contact-hero-text";
-  heroText.innerText = "For reservations Phone Number: 03-000-000 call us!";
+  heroText.innerText = "For reservations contact us: 03-000-000";
 
   contactContainer.append(heroSection);
   heroSection.append(heroText);
