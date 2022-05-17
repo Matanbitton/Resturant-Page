@@ -31,6 +31,14 @@ let thirdPizza = pizzaItems[3];
 thirdPizza.innerHTML =
   " <h4> Bianca</h4> <p> Fresh Mozzarella | Basil | Parmigiano Reggiano D.O.P </p>";
 
+let wineItems = wineMenu.childNodes;
+let firstWine = wineItems[1];
+firstWine.innerHTML = "<h4> Chablis </h4> ";
+let secondWine = wineItems[2];
+secondWine.innerHTML = "<h4> Yarden Malbek - 2018 </h4>  ";
+let thirdWine = wineItems[3];
+thirdWine.innerHTML = " <h4> Shiloh Cabarnet Souvinion - 2016 </h4> ";
+
 const myIcon = new Image();
 myIcon.src = Icon;
 myIcon.className = "icon";
