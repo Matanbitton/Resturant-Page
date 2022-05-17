@@ -21,7 +21,15 @@ const wineBtn = buttonsContainer.querySelector(".wine-btn");
 const contactBtn = buttonsContainer.querySelector(".contact-btn");
 const logo = document.createElement("h4");
 
-console.log(pizzaItems);
+let firstPizza = pizzaItems[1];
+firstPizza.innerHTML =
+  "<h4> Pizza Margherita </h4>  <p>  a bubbly crust, crushed San Marzano tomato sauce, fresh mozzarella and basil, a drizzle of olive oil, and a sprinkle of salt. That is all. </p> ";
+let secondPizza = pizzaItems[2];
+secondPizza.innerHTML =
+  "<h4> Diavola </h4> <p> San Marzano Tomato Sauce | Fresh Mozzarella | Spicy Sopressata Salami | Basil | Special Hot Honey | Extra Virgin Olive Oil </p>  ";
+let thirdPizza = pizzaItems[3];
+thirdPizza.innerHTML =
+  " <h4> Bianca</h4> <p> Fresh Mozzarella | Basil | Parmigiano Reggiano D.O.P </p>";
 
 const myIcon = new Image();
 myIcon.src = Icon;

@@ -10,7 +10,7 @@ export default function renderPizzaMenu() {
     let menuItemPrice = document.createElement("h4");
 
     menuContainer.className = "pizza-menu-container";
-    menuItem.className = `"pizza-menu-item-${i}"`;
+    menuItem.className = `pizza-menu-item`;
     menuItemTitle.className = "pizza-menu-item-title";
     menuItemPrice.className = "pizza-menu-item-price";
 

@@ -83,14 +83,17 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0;
+  padding: 10px;
   margin: 0;
   width: 100%;
   border-radius: 1em;
   border: 2px solid var(--yellow);
   color: white;
-  font-size: 24px;
+  font-size: 20px;
   backdrop-filter: blur(2px);
+}
+.pizza-menu-item > p {
+  font-style: italic;
 }
 .pizza-menu-title {
   grid-area: 1 / 1 / 1 / 2;
