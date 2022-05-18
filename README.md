@@ -4,7 +4,7 @@
 
 ## About The Project
 
-The goal behind this project to understand ES6 Modules, and package managment and asset management with Webpack.
+The goal behind this project was to understand ES6 Modules, and package managment and asset management with Webpack.
 The idea was to make a simple web page for a resturant entirely with JavaScript and let webpack do the magic with bundling the files and rendering the HTML.
 
 ## 🚀 Languages and Tools:
