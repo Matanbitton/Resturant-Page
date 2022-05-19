@@ -31,7 +31,7 @@ export function menuButtons() {
   home.innerText = "Home";
   pizza.innerText = "Our Pizzas";
   wine.innerText = "Our Wines";
-  contact.innerText = "Contanct";
+  contact.innerText = "Contact";
   buttonsContainer.append(home, pizza, wine, contact);
 
   return buttonsContainer;
