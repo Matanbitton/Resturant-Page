@@ -1,6 +1,6 @@
 # Resturant-Page
 
-- 👨‍💻 See the live version of this project at **[Resturant Page](https://matanbitton.github.io/Resturant-Page/)**
+- 👨‍💻 See the live version of this project at **[Resturant Page](https://matanbitton.github.io/Resturant-Page/)** (Not Optimizied For Mobile)
 
 ## About The Project
 
